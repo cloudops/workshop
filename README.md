@@ -1,0 +1,4 @@
+workshop
+========
+
+Internal Chef workshop
