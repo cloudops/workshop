@@ -12,3 +12,8 @@ current_dir = File.dirname(__FILE__)
   cookbook_email "#{user}@cloudops.com"
 
  
+# cloudstack
+knife[:cloudstack_url] = "http://preprod.vpc.cloudops.net:8080/client/api"
+knife[:cloudstack_zone] = "preprod"
+knife[:cloudstack_api_key]  = ""
+knife[:cloudstack_secret_key] = ""
