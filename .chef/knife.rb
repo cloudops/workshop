@@ -1,0 +1,14 @@
+current_dir = File.dirname(__FILE__)
+  user = ENV['OPSCODE_USER'] || ENV['USER']
+  node_name                user
+  client_key               "#{current_dir}/#{user}.pem"
+  validation_client_name   "cloudops-validator"
+  validation_key           "#{current_dir}/cloudops-validator.pem"
+  chef_server_url          "https://boite-a-conf.chef.vpcloud.com"
+  syntax_check_cache_path  "#{current_dir}/syntax_check_cache"
+  cookbook_path            ["#{current_dir}/../cookbooks"]
+  cookbook_copyright "CloudOps, Inc."
+  cookbook_license "apachev2"
+  cookbook_email "#{user}@cloudops.com"
+
+ 
