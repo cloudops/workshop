@@ -3,6 +3,37 @@ Overview
 
 Chef workshop training at CloudOps using test Chef Server.
 
+
+Install Chef-client
+===================
+
+### System wide (default method)
+
+```bash
+curl -L https://www.opscode.com/chef/install.sh | sudo bash
+cd /opt/chef/embedded/bin
+sudo ./gem install knife-cloudstack
+```
+
+### user only (ruby method)
+
+```bash
+\curl -sSL https://get.rvm.io | bash -s stable —ruby
+source ~/.rvm/scripts/rvm
+rvm use ruby
+gem install knife-cloudstack
+```
+
+## get this repo
+
+```bash
+cd ~
+mkdir chef
+cd chef
+git clone https://github.com/cloudops/workshop.git
+```
+
+
 Update knife.rb
 ===============
 
